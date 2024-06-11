@@ -2,26 +2,25 @@
 This codebase provides a Pytorch implementation of:
 
 >**T2FNorm: Train-time Feature Normalization for OOD Detection in Image Classification.**  
-[CVPRW 2024](https://arxiv.org/abs/2305.17797)  
+[![t2fnorm](https://img.shields.io/badge/CVPRW'24-T2FNorm-f4d5b3?style=for-the-badge)](https://arxiv.org/abs/2305.17797)  
 Sudarshan Regmi, Bibek Panthi, Sakar Dotel, Prashnna K. Gyawali, Danail Stoyanov, Binod Bhattarai
 
 ## Abstract
 Neural networks are notorious for being overconfident predictors, posing a significant challenge to their safe deployment in real-world applications. While feature normalization has garnered considerable attention within the deep learning literature, current train-time regularization methods for Out-of-Distribution(OOD) detection are yet to fully exploit this potential. Indeed, the naive incorporation of feature normalization within neural networks does not guarantee substantial improvement in OOD detection performance. In this work, we introduce T2FNorm, a novel approach to transforming features to hyperspherical space during training, while employing non-transformed space for OOD-scoring purposes. This method yields a surprising enhancement in OOD detection capabilities without compromising model accuracy in in-distribution(ID). Our investigation demonstrates that the proposed technique substantially diminishes the norm of the features of all samples, more so in the case of out-of-distribution samples, thereby addressing the prevalent concern of overconfidence in neural networks. The proposed method also significantly improves various post-hoc OOD detection methods.
 
-### Setup environment
+## T2FNorm highlights in OpenOODv1.5 [leaderboard](https://zjysteven.github.io/OpenOOD/) 
+➤ **ranks 4th** in the *far-OOD AUROC* metric on CIFAR10 datasets.  
+➤ **ranks 8th** in the *far-OOD AUROC* metric on CIFAR100 datasets.  
+➤ **ranks 9th** in the *far-OOD AUROC* metric on ImageNet200 datasets  (OOD).  
+➤ **ranks 5th** in the *far-OOD AUROC* metric on ImageNet200 datasets (FSOOD).
+
+
+### Follow [OpenOOD](https://github.com/Jingkang50/OpenOOD) official instruction to complete the setup.
 ```
-conda env create -f environment.yml
+pip install git+https://github.com/Jingkang50/OpenOOD
 ```
 
-Follow [OpenOOD](https://github.com/Jingkang50/OpenOOD) official instruction to complete the setup.
-```
-python ./scripts/download.py \
-	--contents 'datasets' 'checkpoints' \
-	--save_dir './data' './results' \
-	--dataset_mode 'benchmark'
-```
-
-## T2FNorm Illustration
+### T2FNorm Illustration
 <p align="center">
   <img width="800" src="T2FNorm.png">
 </p>
@@ -50,7 +49,7 @@ Use the following scripts for training and inferencing the model trained with T2
   bash scripts/ood/t2fnorm/imagenet_test_t2fnorm.sh
   ```
 
-#### Pre-trained checkpoints
+### Pre-trained checkpoints
 Pre-trained models are available in the given links:
 - CIFAR-10 [[Google Drive]](https://drive.google.com/file/d/1FchVmaDodfsSE-eyA6FjnEZ7FtFm0v4u/view?usp=sharing): ResNet-18 classifiers trained on CIFAR-10 datasets with T2FNorm regularization across 3 trials.
 - CIFAR-100 [[Google Drive]](https://drive.google.com/file/d/16bEDcPPjPkt4KmnqurfGnI6gPLIwZJc8/view?usp=sharing): ResNet-18 classifiers trained on CIFAR-100 datasets with T2FNorm regularization across 3 trials.
@@ -59,7 +58,7 @@ Pre-trained models are available in the given links:
 
 The inference scripts for T2FNorm currently utilize the T2FNorm postprocessor (MSP with scaled feature). However, T2FNorm is compatible with various types of postprocessors.
 
-#### Results
+### Results
 
 - CIFAR-10 (OOD):
 
@@ -146,5 +145,5 @@ The inference scripts for T2FNorm currently utilize the T2FNorm postprocessor (M
       primaryClass={cs.CV}
 }
 ```
-## Acknowledgment
-This codebase builds upon [OpenOOD: Benchmarking Generalized OOD Detection](https://github.com/Jingkang50/OpenOOD).
+### Acknowledgment
+This codebase builds upon [OpenOOD](https://github.com/Jingkang50/OpenOOD).
