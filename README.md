@@ -2,7 +2,7 @@
 This codebase provides a Pytorch implementation of:
 
 >**T2FNorm: Train-time Feature Normalization for OOD Detection in Image Classification.**  
-[![t2fnorm](https://img.shields.io/badge/CVPRW'24-T2FNorm-f4d5b3?style=for-the-badge)](https://arxiv.org/abs/2305.17797)  
+[![t2fnorm](https://img.shields.io/badge/CVPRW'24-T2FNorm-f4d5b3?style=for-the-badge)](https://openaccess.thecvf.com/content/CVPR2024W/TCV2024/papers/Regmi_T2FNorm_Train-time_Feature_Normalization_for_OOD_Detection_in_Image_Classification_CVPRW_2024_paper.pdf)  
 Sudarshan Regmi, Bibek Panthi, Sakar Dotel, Prashnna K. Gyawali, Danail Stoyanov, Binod Bhattarai
 
 ## Abstract
@@ -136,13 +136,13 @@ The inference scripts for T2FNorm currently utilize the T2FNorm postprocessor (M
 
 ### Please consider citing our work if you find it useful.
 ```
-@misc{regmi2023t2fnorm,
-      title={T2FNorm: Extremely Simple Scaled Train-time Feature Normalization for OOD Detection}, 
-      author={Sudarshan Regmi and Bibek Panthi and Sakar Dotel and Prashnna K. Gyawali and Danail Stoyanov and Binod Bhattarai},
-      year={2023},
-      eprint={2305.17797},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@InProceedings{Regmi_2024_CVPR_2,
+    author    = {Regmi, Sudarshan and Panthi, Bibek and Dotel, Sakar and Gyawali, Prashnna K and Stoyanov, Danail and Bhattarai, Binod},
+    title     = {T2FNorm: Train-time Feature Normalization for OOD Detection in Image Classification},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2024},
+    pages     = {153-162}
 }
 ```
 ### Acknowledgment
