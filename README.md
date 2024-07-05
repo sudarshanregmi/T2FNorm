@@ -8,7 +8,7 @@ Sudarshan Regmi, Bibek Panthi, Sakar Dotel, Prashnna K. Gyawali, Danail Stoyanov
 ## Abstract
 Neural networks are notorious for being overconfident predictors, posing a significant challenge to their safe deployment in real-world applications. While feature normalization has garnered considerable attention within the deep learning literature, current train-time regularization methods for Out-of-Distribution(OOD) detection are yet to fully exploit this potential. Indeed, the naive incorporation of feature normalization within neural networks does not guarantee substantial improvement in OOD detection performance. In this work, we introduce T2FNorm, a novel approach to transforming features to hyperspherical space during training, while employing non-transformed space for OOD-scoring purposes. This method yields a surprising enhancement in OOD detection capabilities without compromising model accuracy in in-distribution(ID). Our investigation demonstrates that the proposed technique substantially diminishes the norm of the features of all samples, more so in the case of out-of-distribution samples, thereby addressing the prevalent concern of overconfidence in neural networks. The proposed method also significantly improves various post-hoc OOD detection methods.
 
-## T2FNorm highlights in OpenOODv1.5 [leaderboard](https://zjysteven.github.io/OpenOOD/) 
+### T2FNorm highlights in OpenOODv1.5 [leaderboard](https://zjysteven.github.io/OpenOOD/) [Updated: June 2024]
 ➤ **ranks 4th** in the *far-OOD AUROC* metric on CIFAR10 datasets.  
 ➤ **ranks 8th** in the *far-OOD AUROC* metric on CIFAR100 datasets.  
 ➤ **ranks 9th** in the *far-OOD AUROC* metric on ImageNet200 datasets  (OOD).  
