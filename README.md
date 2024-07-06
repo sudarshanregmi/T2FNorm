@@ -2,7 +2,7 @@
 This codebase provides a Pytorch implementation of:
 
 >**T2FNorm: Train-time Feature Normalization for OOD Detection in Image Classification.**  
-[![t2fnorm](https://img.shields.io/badge/CVPRW'24-T2FNorm-f4d5b3?style=for-the-badge)](https://openaccess.thecvf.com/content/CVPR2024W/TCV2024/papers/Regmi_T2FNorm_Train-time_Feature_Normalization_for_OOD_Detection_in_Image_Classification_CVPRW_2024_paper.pdf)  
+[![t2fnorm](https://img.shields.io/badge/CVPRW'24-T2FNorm-fdd7e6?style=for-the-badge)](https://openaccess.thecvf.com/content/CVPR2024W/TCV2024/papers/Regmi_T2FNorm_Train-time_Feature_Normalization_for_OOD_Detection_in_Image_Classification_CVPRW_2024_paper.pdf)
 Sudarshan Regmi, Bibek Panthi, Sakar Dotel, Prashnna K. Gyawali, Danail Stoyanov, Binod Bhattarai
 
 ## Abstract
@@ -14,6 +14,10 @@ Neural networks are notorious for being overconfident predictors, posing a signi
 ➤ **ranks 9th** in the *far-OOD AUROC* metric on ImageNet200 datasets  (OOD).  
 ➤ **ranks 5th** in the *far-OOD AUROC* metric on ImageNet200 datasets (FSOOD).
 
+<p style="display: flex; align-items: center;">
+    <span>Check other works:</span>&nbsp;&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/CVPRW'24-ReweightOOD-f4d5b3?style=for-the-badge" alt="reweightood" style="margin-right: 10px;">
+</p>
 
 ### Follow [OpenOOD](https://github.com/Jingkang50/OpenOOD) official instruction to complete the setup.
 ```
