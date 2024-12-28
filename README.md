@@ -14,10 +14,16 @@ Neural networks are notorious for being overconfident predictors, posing a signi
 ➤ **ranks 9th** in the *far-OOD AUROC* metric on ImageNet200 datasets  (OOD).  
 ➤ **ranks 5th** in the *far-OOD AUROC* metric on ImageNet200 datasets (FSOOD).
 
-<p style="display: flex; align-items: center;">
-    <span>Check other works:</span>&nbsp;&nbsp;&nbsp;
-    <a href="https://github.com/sudarshanregmi/reweightood"><img src="https://img.shields.io/badge/CVPRW'24-ReweightOOD-f4d5b3?style=for-the-badge" alt="reweightood" style="margin-right: 10px;"></a>
-</p>
+
+<span>Check other works:</span>
+
+<a href="https://github.com/sudarshanregmi/ascood"><img src="https://img.shields.io/badge/arXiv'24-ASCOOD-fdd7e6?style=for-the-badge" alt="ascood" style="margin-right: 10px;"></a> <br>
+<a href="https://github.com/sudarshanregmi/reweightood"><img src="https://img.shields.io/badge/CVPRW'24-ReweightOOD-f4d5b3?style=for-the-badge" alt="t2fnorm" style="margin-right: 10px;"></a>
+
+<!-- <p style="display: flex; align-items: center;"> -->
+<!--     <span>Check other works:</span>&nbsp;&nbsp;&nbsp; -->
+<!--     <a href="https://github.com/sudarshanregmi/reweightood"><img src="https://img.shields.io/badge/CVPRW'24-ReweightOOD-f4d5b3?style=for-the-badge" alt="reweightood" style="margin-right: 10px;"></a> -->
+<!-- </p> -->
 
 ### Follow [OpenOOD](https://github.com/Jingkang50/OpenOOD) official instruction to complete the setup.
 ```
